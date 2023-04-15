@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+
+    <style>
+      .tabBlok
+      {
+          background-color:#57574f;
+          border:solid 0px #FFA54F;
+          border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+          max-width:200px;
+          width:100%;
+          overflow:hidden;
+          display:block;
+      }
+      .dijitalSaat
+      {
+          vertical-align:middle;
+          font-family:Orbitron;
+          font-size:40px;
+          font-weight:normal;
+          color:#FFF;
+          padding:0 10px;
+      }
+      .saat
+      {
+          vertical-align:middle; 
+          font-family:Orbitron;
+          font-size:20px;
+          font-weight:normal;
+          color:#FFF;
+      }
+      .zemin{
+          background-color:#F3F3F3;
+          max-width:220px;
+          width:100%;
+          margin:0 auto;
+          padding:20px;
+      }
+  </style>
+
+</head>
+<body onload="dijitalSaat();">
+   <!---Header Start-->
+   <header id="header" >
+    <div class="header" style="background-image: url(images/cv_background.jpg);">
+      <div class="container">
+        <div class="header-navbar">
+          <div class="header-logo">
+            <h2>Yaren Sarı</h2>
+          </div>
+          
+          <div class="zemin">
+ 
+            <table class="tabBlok" align="center" cellspacing="0" cellpadding="0" border="0">
+                <tr><td class="dijitalSaat" id="dt"></td> 
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+     
+                            <tr><td class="saat" id="dt_saat">?</td></tr>
+     
+                            <!-- SHOWING SECONDS. -->
+                            <tr><td class="saat" id="dt_saniye"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+          <div class="header-menu">
+            <ul id="menuItems">
+              <li><a style="color:#000" href="index.html">Ana Sayfa</a></li>
+              <li><a style="color:#000" href="cv.html">Özgeçmiş</a></li>            
+            </ul>
+            
+          </div>
+        </div>
+        <div class="div header-text">
+          <h1 ><span class="first-letter">G</span>eçmişim</h1>
+          <a href="posts.html" style="color:#fff" class="btn-post">Gönderiler</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!---Header Finish-->
+  <div id="asteriks_hr">
+    <i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i>
+  </div>
+  <!---About Start-->
+  <section id="about">
+    <div class="about">
+      <div class="container">
+        <div class="about-content ">
+          <div class="about-img">
+            <img
+              src="images/school.jpg"
+               alt="yaren_sari-img"
+            />
+          </div>
+          <div class="about-text ">
+            <h4>Yaren Sarı</h4>
+            <div id="asteriks">
+                <i class="fa-solid fa-asterisk"></i>
+            </div>
+            <p>
+              Ben Yaren Sarı, Gazi Üniversitesi 3. sınıf Bilgisayar Mühendisliği öğrencisiyim. Sistem ve network alanında kendimi gelişirmek ve kariyerimi bu yönde devam ettirmek istiyorum. Bir önceki zorunlu stajımı da bu alanda gerçekleştirip, L2-L3 katman araçlar üzerinde tecrübe kazanma imkanım oldu. Cv'imi incelemek isterseniz:
+            </p>
+            <hr>
+            <div>
+                <p>   
+                    <a href="YarenSariÖzgecmis.pdf" target="_blank">Özgeçmişim</a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---About Finish-->
+
+  <!---Footer Start-->
+  <footer id="footer">
+    <div class="footer">
+      <nav class="footer-social">
+        <a href="https://www.linkedin.com/in/yaren-sar%C4%B1-08aa34225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/y.reen/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </nav>
+    </div>
+  </footer>
+  <!---Footer Finish-->
+
+  <script>
+    // tarih oluşturma fonksiyonu
+    function dijitalSaat() {
+        var dt = new Date();    // DATE() ile yeni bir tarih nesnesi oluşturuldu.
+        var saat = dt.getHours();
+        var dakika = dt.getMinutes();
+        var saniye = dt.getSeconds();
+ 
+        dakika = Tik(dakika);
+        saniye = Tik(saniye);
+ 
+        document.getElementById('dt').innerHTML = saat + ":" + dakika;
+        document.getElementById('dt_saniye').innerHTML = saniye;
+ 
+        if (saat > 12) { 
+            document.getElementById('dt_saat').innerHTML = '?'; 
+        }
+        else { 
+            document.getElementById('dc_hour').innerHTML = '?'; 
+        }
+ 
+        // her 1 saniyede bir yenileme yapılıyor.
+        var time
+
+    }
+    time = setInterval(dijitalSaat, 1000);
+ 
+    function Tik(tikDegeri) {
+        if (tikDegeri < 10) {
+            tikDegeri = "0" + tikDegeri;
+        }
+        return tikDegeri;
+    }
+</script>
+
+</body>
+</html>

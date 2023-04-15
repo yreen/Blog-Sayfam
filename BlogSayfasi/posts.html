@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gönderiler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+
+    <style>
+      .tabBlok
+      {
+          background-color:#57574f;
+          border:solid 0px #FFA54F;
+          border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+          max-width:200px;
+          width:100%;
+          overflow:hidden;
+          display:block;
+      }
+      .dijitalSaat
+      {
+          vertical-align:middle;
+          font-family:Orbitron;
+          font-size:40px;
+          font-weight:normal;
+          color:#FFF;
+          padding:0 10px;
+      }
+      .saat
+      {
+          vertical-align:middle; 
+          font-family:Orbitron;
+          font-size:20px;
+          font-weight:normal;
+          color:#FFF;
+      }
+      .zemin{
+          background-color:#F3F3F3;
+          max-width:220px;
+          width:100%;
+          margin:0 auto;
+          padding:20px;
+      }
+  </style>
+
+</head>
+<body onload="dijitalSaat();">
+  <!---Header Start-->
+   <header id="header" >
+    <div class="header" style="background-image: url(images/nature.jpg);">
+      <div class="container">
+        <div class="header-navbar">
+          <div class="header-logo">
+            <h2>Yaren Sarı</h2>
+          </div>
+          <div class="zemin">
+ 
+            <table class="tabBlok" align="center" cellspacing="0" cellpadding="0" border="0">
+                <tr><td class="dijitalSaat" id="dt"></td> 
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+     
+                            <tr><td class="saat" id="dt_saat">?</td></tr>
+     
+                            <!-- SHOWING SECONDS. -->
+                            <tr><td class="saat" id="dt_saniye"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+          <div class="header-menu">
+            <ul id="menuItems">
+              <li><a style="color:#000" href="index.html">Ana Sayfa</a></li>
+              <li><a style="color:#000" href="cv.html">Özgeçmiş</a></li>            
+            </ul>
+            
+          </div>
+        </div>
+        <div class="div header-text">
+          <h1 ><span class="first-letter">G</span>önderiler</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!---Header Finish-->
+    <div id="asteriks_hr">
+        <i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i><i class="fa-solid fa-asterisk"></i>
+    </div>
+  <!---Post Left Photo Start-->
+  <section id="post_left">
+    <div class="post_left">
+      <div class="container">
+        <div class="post_left-content anime-left">
+          <div class="post_left-img">
+            <img
+              src="images/post1.jpeg"
+               alt=""
+            />
+          </div>
+          <div class="post_left-text anime-right">
+            <h4>Gün Batımı</h4>
+            <div id="asteriks">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+            <p>
+              03.04.23
+            </p>
+            <p>
+              Bugün Ankara'da akşam sularında çok güzel görüntülere tanıklık ettim ve sizinle de bunu paylaşmak isterim, bir de alıntı bırakıyorum :
+              Her gün batımı, sıfırlama fırsatıdır. - Richie Norton
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---Post Left Photo Finish-->
+<!---Post Right Photo Start-->
+<section id="post_right">
+<div class="post_right">
+  <div class="container">
+    <div class="post_right-content">
+      <div class="post_right-text anime-left">
+        <h4>Lösev Günü</h4>
+        <div id="asteriks">
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <p>
+          07.04.23
+        </p>
+        <p>
+          Ramazan başlangıcı ile birlikte Lösev etkinlikleri başladı ve ben de gönüllüsü olduğum ortamda saha çalışmalarına katılmaktayım. İmkanı olan herkese böyle bir ortamı tecrübe etmelerini tavsiye ederim. Ayrıca bağış yapmak isteyenler Lösev'in sitesinden gerçekleştirebilirler. 
+          <a href="https://www.losev.org.tr/v6">LÖSEV</a>
+          
+        </p>
+      </div>
+      <div class="post_right-img anime-right">
+        <img
+          src="images/post2.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!---Post Right Photo Finish-->
+<!---Post Left Photo Start-->
+<section id="post_left">
+    <div class="post_left">
+      <div class="container">
+        <div class="post_left-content anime-left">
+          <div class="about-img">
+            <img
+              src="images/post3.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="post_left-text anime-right">
+            <h4>Overcooked 2!</h4>
+            <div id="asteriks">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+            <p>
+              20.03.23
+            </p>
+            <p>
+              Bugün de oynamaktan keyif aldığım ve arkadaşlarınız ile birlikte güzel vakit geçirebileceğiniz bir oyundan bahsedeceğim. Overcooded 2 çoklu oyunculu desteği ile belirli zaman içerisinde çok farklı zorlukları ile mücadele ederek istenilen yemekleri zamanında yapmanızı istemekte. Steam tanıtımında şu cümlelere yer vermiş: 
+              Overcooked, yepyeni ve kaotik bir pişirme aksiyonuyla geri dönüyor! Soğan Krallığına dön ve klasik eşli modda veya dört oyuncuya kadar çevrimiçi modda şef ekibini kur. Önlüklerini sıkı tut... Dünyayı kurtarma vakti (yine!)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---Post Left Photo Finish-->
+
+<!---Post Right Photo Start-->
+<section id="post_right">
+<div class="post_right">
+  <div class="post_right">
+    <div class="post_right-content">
+      <div class="post_right-text anime-left">
+        <h4>Mogan</h4>
+        <div id="asteriks">
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <p>
+          24.03.23
+        </p>
+        <p>
+          Ankara'nın Gölbaşı ilçesinde bulunan. benim de memleketime giderken sık sık önünden geçtiğim Mogan. Oldukça sakin, esintili olmayan güzel havada piknik yapıp doğa ile iç içe huzurlu zaman geçirmek için çok ideal.
+        </p>
+      </div>
+      <div class="post_right-img anime-right">
+        <img
+          src="images/4.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!---Post Right Photo Finish-->
+<!---Post Left Photo Start-->
+<section id="post_left">
+    <div class="post_left">
+      <div class="container">
+        <div class="post_left-content anime-left">
+          <div class="about-img">
+            <img
+              src="images/5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="post_left-text anime-right">
+            <h4>Resim</h4>
+            <div id="asteriks">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+            <p>
+              25.02.23
+            </p>
+            <p>
+              Bir tuval biraz boya ve biraz fırça ile içinizden geldiği gibi aklınızı tuvalete dökebilirsiniz. Rahatlamak ve belki de hediye etmek amacıyla ortaya bir şeyler çıkarabilirsiniz..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---Post Left Photo Finish-->
+
+<!---Post Right Photo Start-->
+<section id="post_right">
+<div class="post_right">
+  <div class="post_right">
+    <div class="post_right-content">
+      <div class="post_right-text anime-left">
+        <h4>Kugulu Park</h4>
+        <div id="asteriks">
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <p>
+          03.02.23
+        </p>
+        <p>
+          Bugün Kuğulu parkı ziyaret etme imkanım oldu. Ankara şehrinin Kavaklıdere mahallesinde bulunan parkının havuzunda, kuğular, kazlar ve ördekler yer almaktadır. Hoş vakit geçirip kafa dinleyebileceğiniz bir ortam ancak haftaiçi giderseniz daha boş olacağını düşünüyorum. İster kitabınızı okuyun ister köpeğinizi yürüyüşe çıkarın..
+        </p>
+      </div>
+      <div class="post_right-img anime-right">
+        <img
+          src="images/6.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!---Post Right Photo Finish-->
+<!---Post Left Photo Start-->
+<section id="post_left">
+    <div class="post_left">
+      <div class="container">
+        <div class="post_left-content anime-left">
+          <div class="post_left-img">
+            <img
+              src="images/7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="post_left-text anime-right">
+            <h4>Kafkaokur</h4>
+            <div id="asteriks">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+            <p>
+              04.01.23
+            </p>
+            <p>
+              Elimden geldiğince, karşıma çıktıkça Kafkaokur dergisinden sayılar alıp kahve eşliğinde okurum. Hem edebi hem biyografi hem roman birçok alandan sayfalarda kendinizi bulabilirsiniz. Bu sayıda da Hayvan Çiftliği ve 1984 kitaplarının yazarları olan George Orwel ele alınmıştı. Bu sayıda da kapak sözümüz: 
+              “İnsan sevilmekten çok anlaşılmayı istiyordu belki de.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!---Post Left Photo Finish-->
+
+<!---Post Right Photo Start-->
+<section id="post_right">
+<div class="post_right">
+  <div class="container">
+    <div class="post_right-content">
+      <div class="post_right-text anime-left">
+        <h4>Papatya</h4>
+        <div id="asteriks">
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <p>
+          28.12.22
+        </p>
+        <p>
+          Evi şenlendirip renklendirmek için bazen çiçek almayı çok seviyorum, yemek masanızda arada böyle şeyler görmek iyi gelecektir. 
+        </p>
+      </div>
+      <div class="post_right-img anime-right">
+        <img
+          src="images/8.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!---Post Right Photo Finish-->
+   <!---Footer Start-->
+   <footer id="footer">
+    <div class="footer">
+      <nav class="footer-social">
+        <a href="https://www.linkedin.com/in/yaren-sar%C4%B1-08aa34225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/y.reen/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </nav>
+    </div>
+  </footer>
+  <!---Footer Finish-->
+  <script>
+    window.sr=ScrollReveal();
+    sr.reveal('.anime-left',{
+        origin:'left',
+        duration:1000,
+        distance:'25rem',
+        delay:300
+    })
+    window.sr=ScrollReveal();
+    sr.reveal('.anime-right',{
+        origin:'right',
+        duration:1000,
+        distance:'25rem',
+        delay:600
+    })
+   
+  </script>
+
+<script>
+  // tarih oluşturma fonksiyonu
+  function dijitalSaat() {
+      var dt = new Date();    // DATE() ile yeni bir tarih nesnesi oluşturuldu.
+      var saat = dt.getHours();
+      var dakika = dt.getMinutes();
+      var saniye = dt.getSeconds();
+
+      dakika = Tik(dakika);
+      saniye = Tik(saniye);
+
+      document.getElementById('dt').innerHTML = saat + ":" + dakika;
+      document.getElementById('dt_saniye').innerHTML = saniye;
+
+      if (saat > 12) { 
+          document.getElementById('dt_saat').innerHTML = '?'; 
+      }
+      else { 
+          document.getElementById('dc_hour').innerHTML = '?'; 
+      }
+
+      // her 1 saniyede bir yenileme yapılıyor.
+      var time
+
+  }
+  time = setInterval(dijitalSaat, 1000);
+
+  function Tik(tikDegeri) {
+      if (tikDegeri < 10) {
+          tikDegeri = "0" + tikDegeri;
+      }
+      return tikDegeri;
+  }
+</script>
+    
+</body>
+</html>
